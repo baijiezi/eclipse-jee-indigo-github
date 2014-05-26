@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-26 12:08:18 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="test.model.TblUser" table="tbl_user" catalog="hibernate_test">
+        <id name="uuid" type="java.lang.Integer">
+            <column name="uuid" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="int">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="age" type="int">
+            <column name="age" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
